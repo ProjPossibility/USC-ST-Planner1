@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent" android:layout_height="match_parent"
+	android:orientation="horizontal">
+	<ImageView 
+		android:src="@drawable/ic_launcher"	
+		android:layout_height="wrap_content" 
+		android:layout_width="wrap_content"
+		android:id="@+id/img"></ImageView>
+<!-- 	<LinearLayout  -->
+<!-- 	android:id="@+id/linearLayout1" -->
+<!-- 	android:layout_width="match_parent"  -->
+<!-- 	android:layout_height="wrap_content" -->
+<!-- 	android:orientation="vertical"> -->
+<!-- 		<TextView  -->
+<!-- 			android:text="TextView"  -->
+<!-- 			android:layout_width="wrap_content" -->
+<!-- 			android:layout_height="wrap_content"  -->
+<!-- 			android:id="@+id/item_title"></TextView> -->
+<!-- 		<TextView  -->
+<!-- 			android:layout_height="wrap_content" -->
+<!-- 			android:layout_width="wrap_content" -->
+<!-- 			android:text="TextView" -->
+<!-- 			android:id="@+id/item_due"></TextView> -->
+<!-- 	</LinearLayout> -->
+	<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/RelativeLayout01"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="4dip"
+    android:paddingLeft="12dip"
+    android:paddingRight="12dip" >
+    
+    <TextView
+        android:id="@+id/item_title"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20dip" >
+    </TextView>
+    <TextView
+        android:id="@+id/item_desc"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/item_title"
+        >
+    </TextView>
+    <TextView
+        android:id="@+id/item_address"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/item_desc"
+        >
+     </TextView>
+     <TextView
+        android:id="@+id/item_dtstart"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/item_address"
+        >
+     </TextView>
+     <TextView
+        android:id="@+id/item_dtend"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/item_dtstart"
+        >
+     </TextView>
+    
+</RelativeLayout>
+</LinearLayout>
